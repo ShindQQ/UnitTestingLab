@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingLab", "UnitTesti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimitiveBankSystem", "PrimitiveBankSystem\PrimitiveBankSystem.csproj", "{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTL_Test", "UTL_Test\UTL_Test.csproj", "{002F7385-132D-4952-99FB-87BDAF2F82CD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{002F7385-132D-4952-99FB-87BDAF2F82CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{002F7385-132D-4952-99FB-87BDAF2F82CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{002F7385-132D-4952-99FB-87BDAF2F82CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{002F7385-132D-4952-99FB-87BDAF2F82CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
