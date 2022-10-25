@@ -7,7 +7,7 @@ namespace UTL_Test
 {
 
     [TestClass]
-    public class UnitTest1
+    public class BankUserTests
     {
       
 

@@ -20,8 +20,8 @@ public sealed class Bank
     /// <summary>
     ///     Percent for bank
     /// </summary>
-    private const decimal bankPercent = 0.2m;
-    
+    private const decimal bankPercent = 1.2m;
+
     /// <summary>
     ///     Empty constructor
     /// </summary>
@@ -49,13 +49,12 @@ public sealed class Bank
 
         var moneyAfterDeposit = ammountOfMoney;
 
-        for(int i = 0; i < timeInMonths; i++)
+        for (int i = 0; i < timeInMonths; i++)
         {
             moneyAfterDeposit += moneyAfterDeposit * bankPercent;
         }
 
         selectedUser.StoryOfMoney.Add(moneyAfterDeposit);
-
 
         return true;
     }
@@ -75,7 +74,8 @@ public sealed class Bank
             return false;
         }
 
-        selectedUser.StoryOfMoney.Add(selectedUser.AmmountOfMoney + ammountOfMoney - (ammountOfMoney * bankPercent));
+        selectedUser.StoryOfMoney.Add(selectedUser.AmmountOfMoney + ammountOfMoney);
+        selectedUser.StoryOfMoney.Add(-ammountOfMoney * bankPercent);
 
         return true;
     }
