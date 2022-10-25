@@ -81,7 +81,7 @@ public sealed class Bank
         selectedUser.AmmountOfMoney = selectedUser.AmmountOfMoney + ammountOfMoney;
 
         selectedUser.StoryOfMoney.Add(selectedUser.AmmountOfMoney);
-        selectedUser.StoryOfMoney.Add(-ammountOfMoney * bankPercent);
+        selectedUser.StoryOfMoney.Add(selectedUser.AmmountOfMoney - ammountOfMoney * bankPercent);
 
         return true;
     }
