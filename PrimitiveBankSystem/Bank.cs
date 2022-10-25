@@ -49,7 +49,7 @@ public sealed class Bank
 
         var moneyAfterDeposit = ammountOfMoney;
 
-        for(int i = 0; i < timeInMonths; i++)
+        for (int i = 0; i < timeInMonths; i++)
         {
             moneyAfterDeposit += moneyAfterDeposit * bankPercent;
         }
