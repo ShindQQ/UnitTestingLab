@@ -27,6 +27,4 @@ public sealed class BankUser : Person
         StoryOfMoney = new List<decimal>();
         StoryOfMoney.Add(ammountOfMoney);
     }
-
-
 }

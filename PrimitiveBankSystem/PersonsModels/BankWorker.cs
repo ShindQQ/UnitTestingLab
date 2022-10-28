@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UnitTestingLab.PersonsModels;
+﻿namespace UnitTestingLab.PersonsModels;
 
 /// <summary>
 ///     Class for testing inheritance, collection and int value
