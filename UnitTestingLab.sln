@@ -1,19 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
-    <PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\PrimitiveBankSystem\PrimitiveBankSystem.csproj" />
-  </ItemGroup>
-
-</Project>
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingLab", "UnitTestingLab\UnitTestingLab.csproj", "{C4163452-AC5B-4E01-BFE8-D673B7834A66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimitiveBankSystem", "PrimitiveBankSystem\PrimitiveBankSystem.csproj", "{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UTL_Test", "UTL_Test\UTL_Test.csproj", "{8D939BED-7602-4D19-BB43-77DF08BD74B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4163452-AC5B-4E01-BFE8-D673B7834A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4163452-AC5B-4E01-BFE8-D673B7834A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4163452-AC5B-4E01-BFE8-D673B7834A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4163452-AC5B-4E01-BFE8-D673B7834A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1E65C8-B7A0-4D98-BEC7-63FE821CC54B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		    SolutionGuid = {C64CD7C8-6E17-4181-8E79-B4B539C81875}
+		SolutionGuid = {E28D68DE-3FEC-4779-8199-0FD164F10C10}
+	EndGlobalSection
+EndGlobal
