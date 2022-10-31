@@ -8,6 +8,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimitiveBankSystem", "Prim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UTL_Test", "UTL_Test\UTL_Test.csproj", "{8D939BED-7602-4D19-BB43-77DF08BD74B6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeddingServices", "WeddingServices\WeddingServices.csproj", "{5B427581-A367-4ADC-843B-3AE0AA5610B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order_Test", "Order_Test\Order_Test.csproj", "{6BE7E084-977B-420B-8D27-FEB8B8121E9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +30,20 @@ Global
 		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D939BED-7602-4D19-BB43-77DF08BD74B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B427581-A367-4ADC-843B-3AE0AA5610B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B427581-A367-4ADC-843B-3AE0AA5610B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B427581-A367-4ADC-843B-3AE0AA5610B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B427581-A367-4ADC-843B-3AE0AA5610B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE7E084-977B-420B-8D27-FEB8B8121E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE7E084-977B-420B-8D27-FEB8B8121E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE7E084-977B-420B-8D27-FEB8B8121E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE7E084-977B-420B-8D27-FEB8B8121E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		    SolutionGuid = {C64CD7C8-6E17-4181-8E79-B4B539C81875}
 		SolutionGuid = {E28D68DE-3FEC-4779-8199-0FD164F10C10}
+		    SolutionGuid = {C64CD7C8-6E17-4181-8E79-B4B539C81875}
 	EndGlobalSection
 EndGlobal

@@ -1,21 +1,19 @@
-﻿using System.Security.Claims;
-
-namespace WeddingServices
+﻿namespace WeddingServices
 {
-
-    public sealed class cars : Services
+    public sealed class Cars : Services
     {
-        public readonly string name;
+        public readonly string Name;
 
-        public cars(string Name, double Price)
+        public Cars(string name, double price)
         {
-            name = Name;
-            price = Price;
+            Name = name;
+            Price = price;
 
         }
+
         public override void Print()
         {
-            Console.WriteLine("Name = "+name+" ,price = "+price);
+            Console.WriteLine("Name = " + Name + " ,price = " + Price);
         }
     }
 }

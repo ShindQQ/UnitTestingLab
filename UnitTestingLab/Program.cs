@@ -7,21 +7,20 @@ class Program
 {
     static void Main()
     {
-
         Bank bank = new Bank();
 
         /// <summary>
         /// Add persons
         /// </summary>
         Console.WriteLine(new String('-', 10) + "Users" + new String('-', 10));
-        bank.BankUsers.Add(1, new UnitTestingLab.PersonsModels.BankUser("Taras", "Shevchenko", 10000));
-        bank.BankUsers.Add(2, new UnitTestingLab.PersonsModels.BankUser("Ivan", "Franko", 12000));
-        bank.BankUsers.Add(3, new UnitTestingLab.PersonsModels.BankUser("Lesia", "Ukrainka", 15000));
-        bank.BankUsers.Add(4, new UnitTestingLab.PersonsModels.BankUser("Vasyl", "Stus", 10000));
-        bank.BankUsers.Add(5, new UnitTestingLab.PersonsModels.BankUser("Olena", "Teliha", 11000));
+        bank.BankUsers.Add(1, new BankUser("Taras", "Shevchenko", 10000));
+        bank.BankUsers.Add(2, new BankUser("Ivan", "Franko", 12000));
+        bank.BankUsers.Add(3, new BankUser("Lesia", "Ukrainka", 15000));
+        bank.BankUsers.Add(4, new BankUser("Vasyl", "Stus", 10000));
+        bank.BankUsers.Add(5, new BankUser("Olena", "Teliha", 11000));
 
-        bank.BankWorkers.Add(1, new UnitTestingLab.PersonsModels.BankWorker("Ivan", "Ivanov"));
-        bank.BankWorkers.Add(2, new UnitTestingLab.PersonsModels.BankWorker("Oleksandr", "Oleksandrov"));
+        bank.BankWorkers.Add(1, new BankWorker("Ivan", "Ivanov"));
+        bank.BankWorkers.Add(2, new BankWorker("Oleksandr", "Oleksandrov"));
 
         /// <summary>
         /// Show list of persons

@@ -1,20 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WeddingServices;
 
-
 namespace Order_Test
 {
-
     [TestClass]
-    public class OrderLTest
+    public sealed class WeddingOrdersTest
     {
-
-
         [TestMethod]
         public void CheckChengesClothes()
         {
-            order Some = new order();
-            bool actual = Some.AddCloth("test", 322);
+            Orders orders = new Orders();
+            bool actual = orders.AddCloth("test", 322);
             bool expected = true;
 
             Assert.AreEqual(expected, actual);
@@ -23,16 +19,14 @@ namespace Order_Test
         [TestMethod]
         public void CheckSummary()
         {
-            order Some = new order();
-            Some.AddCloth("test", 322);
-            Some.AddCar("test2", 10);
+            Orders orders = new Orders();
+
+            orders.AddCloth("test", 322);
+            orders.AddCar("test2", 10);
             double expected = 322 + 10;
-            double actual = Some.Summary();
+            double actual = orders.Summary();
 
             Assert.AreEqual(expected, actual);
         }
-
     }
-
-
 }

@@ -1,21 +1,19 @@
-﻿using System.Xml.Linq;
-
-namespace WeddingServices
+﻿namespace WeddingServices
 {
-
-    public sealed class ceremonies : Services
+    public sealed class Ceremonies : Services
     {
-        public readonly string place;
+        public readonly string Place;
 
-        public ceremonies(string Place, double Price)
+        public Ceremonies(string place, double price)
         {
-            place = Place;
-            price = Price;
+            Place = place;
+            Price = price;
 
         }
+
         public override void Print()
         {
-            Console.WriteLine("Place = " + place + " ,price = " + price);
+            Console.WriteLine("Place = " + Place + " ,price = " + Price);
         }
     }
 }

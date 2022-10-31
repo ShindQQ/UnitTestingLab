@@ -1,21 +1,19 @@
 ﻿namespace WeddingServices
 {
-
-    public sealed class clothes : Services
+    public sealed class Clothes : Services
     {
-        public readonly string name;
+        public readonly string Name;
 
-
-        public clothes(string Name, double Price)
+        public Clothes(string name, double price)
         {
-            name = Name;
-            price = Price;
+            Name = name;
+            Price = price;
 
         }
+
         public override void Print()
         {
-            Console.WriteLine("Name = " + name + " ,price = " + price);
+            Console.WriteLine("Name = " + Name + " ,price = " + Price);
         }
-
     }
 }

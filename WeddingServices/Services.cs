@@ -8,7 +8,7 @@ namespace WeddingServices
 {
     public abstract class Services
     {
-        public double price { get; set; }
+        public double Price { get; set; }
 
         public virtual void Print()
         {
