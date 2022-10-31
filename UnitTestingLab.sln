@@ -8,6 +8,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimitiveBankSystem", "Prim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UTL_Test", "UTL_Test\UTL_Test.csproj", "{9FB876C8-D9F7-4F51-9171-D0031E93ADEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeddingServices", "WeddingServices\WeddingServices.csproj", "{18625023-1B53-40B2-BE24-F06978360B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order_Test", "Order_Test\Order_Test.csproj", "{D3C839F2-BEE4-45CE-93D7-E0F8F3A6543B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{9FB876C8-D9F7-4F51-9171-D0031E93ADEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FB876C8-D9F7-4F51-9171-D0031E93ADEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FB876C8-D9F7-4F51-9171-D0031E93ADEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18625023-1B53-40B2-BE24-F06978360B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18625023-1B53-40B2-BE24-F06978360B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18625023-1B53-40B2-BE24-F06978360B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18625023-1B53-40B2-BE24-F06978360B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C839F2-BEE4-45CE-93D7-E0F8F3A6543B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C839F2-BEE4-45CE-93D7-E0F8F3A6543B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C839F2-BEE4-45CE-93D7-E0F8F3A6543B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C839F2-BEE4-45CE-93D7-E0F8F3A6543B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
