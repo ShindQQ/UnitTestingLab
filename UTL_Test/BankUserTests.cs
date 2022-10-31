@@ -2,15 +2,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UnitTestingLab;
 using UnitTestingLab.PersonsModels;
 
-
 namespace UTL_Test
 {
-
     [TestClass]
     public class BankUserTests
     {
-      
-
         [TestMethod]
         public void Balance_Input100_Return100()
         {
@@ -33,10 +29,7 @@ namespace UTL_Test
             double expected = 891.61;
             double actual = System.Convert.ToDouble(sut.StoryOfMoney[sut.StoryOfMoney.Count-1]);
 
-
             Assert.AreEqual(expected,actual,0.01);
-
-
         }
 
         [TestMethod]
@@ -51,7 +44,6 @@ namespace UTL_Test
             double expected = 900;
             double actual = System.Convert.ToDouble  (sut.StoryOfMoney[sut.StoryOfMoney.Count - 1]);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
 
         [TestMethod]
@@ -62,18 +54,15 @@ namespace UTL_Test
             bank.BankUsers.Add(0, sut);
 
             CollectionAssert.Contains(bank.BankUsers.Values, sut);
-
         }
 
         [TestMethod]
-
         public void CreateBankWorker_ShouldReturnBankWorker()
         {
 
             var sut = new BankWorker("Zero","Null");
 
             Assert.IsInstanceOfType(sut, typeof(Person));
-
         }
 
         [TestMethod]
@@ -83,7 +72,6 @@ namespace UTL_Test
             var sut_2 = new BankWorker("sut", "sut");
 
             Assert.AreNotSame(sut_2, sut_1);
-
         }
     }
 }
