@@ -1,4 +1,6 @@
-﻿namespace WeddingServices
+﻿using System;
+
+namespace WeddingServices
 {
     public sealed class Ceremonies : Services
     {

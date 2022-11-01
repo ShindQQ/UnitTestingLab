@@ -1,4 +1,6 @@
-﻿namespace UnitTestingLab.PersonsModels
+﻿using System.Collections.Generic;
+
+namespace UnitTestingLab.PersonsModels
 {
 
     /// <summary>
@@ -25,8 +27,10 @@
         public BankUser(string name, string surname, decimal ammountOfMoney) : base(name, surname, false)
         {
             AmmountOfMoney = ammountOfMoney;
-            StoryOfMoney = new List<decimal>();
-            StoryOfMoney.Add(ammountOfMoney);
+            StoryOfMoney = new List<decimal>
+            {
+                ammountOfMoney
+            };
         }
     }
 }

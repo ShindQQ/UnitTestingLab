@@ -1,10 +1,12 @@
-﻿namespace WeddingServices
+﻿using System;
+
+namespace WeddingServices
 {
-    public sealed class Clothes : Services
+    public sealed class Cars : Services
     {
         public readonly string Name;
 
-        public Clothes(string name, double price)
+        public Cars(string name, double price)
         {
             Name = name;
             Price = price;

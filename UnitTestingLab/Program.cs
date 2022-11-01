@@ -7,7 +7,7 @@ class Program
 {
     static void Main()
     {
-        Bank bank = new Bank();
+        Bank bank = new();
 
         /// <summary>
         /// Add persons

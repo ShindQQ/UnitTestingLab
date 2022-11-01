@@ -1,12 +1,15 @@
-﻿namespace WeddingServices
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace WeddingServices
 {
     public class Orders
     {
-        List<Ceremonies> Ceremonies { get; set; } = new();
+        List<Ceremonies> Ceremonies { get; set; } = new List<Ceremonies>();
 
-        List<Clothes> Clothes { get; set; } = new();
+        List<Clothes> Clothes { get; set; } = new List<Clothes>();
 
-        List<Cars> Cars { get; set; } = new();
+        List<Cars> Cars { get; set; } = new List<Cars>();
 
         public bool AddCeremonie(string Place, double Price)
         {
@@ -75,8 +78,7 @@
 
         public void DescendingPrice()
         {
-            double sum = 0;
-            List<Services> orders = new();
+            List<Services> orders = new List<Services>();
 
             orders.AddRange(Clothes);
             orders.AddRange(Cars);
