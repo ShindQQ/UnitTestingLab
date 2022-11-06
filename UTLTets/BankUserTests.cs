@@ -18,32 +18,108 @@ namespace UTL_Test
         }
 
         [TestMethod]
-        public void Deposit_1year100m_Return891_61()
+        public void Deposit_1year100mUserWithValidAmountOfMoneyAndId_ShouldReturnTrueAndCalculateCorrectAmount()
         {
-            var sut = new BankUser("Igor", "Ivaov", 100m);
-            Bank bank = new Bank();
-            bank.BankUsers.Add(0, sut);
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            var sut = new Bank();
+            sut.BankUsers.Add(0, user);
 
-            bank.Deposit(0, 100m, 12);
+            var actual = sut.Deposit(0, 100m, 12);
 
             double expected = 891.61;
-            double actual = System.Convert.ToDouble(sut.StoryOfMoney[sut.StoryOfMoney.Count-1]);
+            double actualAmount = System.Convert.ToDouble(sut.BankUsers[0].AmmountOfMoney);
 
-            Assert.AreEqual(expected,actual,0.01);
+            Assert.IsTrue(actual);
+            Assert.AreEqual(expected, actualAmount, 0.01);
         }
 
         [TestMethod]
-        public void Credit_1000m_Return900()
+        public void Deposit_1year100mUserWithInValidAmountOfMoney_ShouldReturnFalse()
         {
-            var sut = new BankUser("Igor", "Ivaov", 100m);
-            Bank bank = new Bank();
-            bank.BankUsers.Add(0, sut);
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            var sut = new Bank();
+            sut.BankUsers.Add(0, user);
 
-            bank.Credit(0, 1000m);
+            var actual = sut.Deposit(0, -100m, 12);
+            Assert.IsFalse(actual);
+           
+        }
+
+        [TestMethod]
+        public void Deposit_1year100mUserWithInValidID_ShouldReturnFalse()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            var sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Deposit(-1, 100m, 12);
+            Assert.IsFalse(actual);
+
+        }
+
+        [TestMethod]
+        public void Deposit_1year100mUserWithInValidTimeInMonths_ShouldReturnFalse()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            var sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Deposit(0, 100m, -12);
+            Assert.IsFalse(actual);
+
+        }
+
+        [TestMethod]
+        public void Deposit_1year100mUserWithInValidAmmountOfMoneyMoreThenUserHas_ShouldReturnFalse()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            var sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Deposit(0, 200m, -12);
+            Assert.IsFalse(actual);
+
+        }
+
+        [TestMethod]
+        public void Credit_1000m_UserWithValidAmountOfMoneyAndId_ShouldReturnTrueAndCalculateCorrectAmount()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            Bank sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Credit(0, 1000m);
 
             double expected = 900;
-            double actual = System.Convert.ToDouble  (sut.StoryOfMoney[sut.StoryOfMoney.Count - 1]);
-            Assert.AreEqual(expected, actual, 0.001);
+            double actualAmount = System.Convert.ToDouble  (user.StoryOfMoney[user.StoryOfMoney.Count - 1]);
+
+            Assert.IsTrue(actual);
+            Assert.AreEqual(expected, actualAmount, 0.001);
+        }
+
+
+        [TestMethod]
+        public void Credit_1000m_UserWithInValidAmountOfMoney_ShouldReturnFalse()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            Bank sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Credit(0, -1000m);
+
+            Assert.IsFalse(actual);
+        }
+
+        [TestMethod]
+        public void Credit_1000m_UserWithInValidID_ShouldReturnFalse()
+        {
+            var user = new BankUser("Igor", "Ivaov", 100m);
+            Bank sut = new Bank();
+            sut.BankUsers.Add(0, user);
+
+            var actual = sut.Credit(-1, 1000m);
+
+            Assert.IsFalse(actual);
         }
 
         [TestMethod]

@@ -40,9 +40,14 @@ namespace UnitTestingLab
         /// <returns>True if everythind is ok and false if checks were wrong</returns>
         public bool Deposit(int idOfUser, decimal ammountOfMoney, int timeInMonths)
         {
+            if (idOfUser < 0 || ammountOfMoney < 0  || timeInMonths < 0)
+            {
+                return false;
+            }
+
             var selectedUser = BankUsers[idOfUser];
 
-            if (idOfUser < 0 || ammountOfMoney < 0 || selectedUser.AmmountOfMoney < ammountOfMoney || timeInMonths < 0)
+            if(selectedUser.AmmountOfMoney < ammountOfMoney)
             {
                 return false;
             }
@@ -73,13 +78,13 @@ namespace UnitTestingLab
         /// <returns>True if everythind is ok and false if checks were wrong</returns>
         public bool Credit(int idOfUser, decimal ammountOfMoney)
         {
-            var selectedUser = BankUsers[idOfUser];
-
             if (idOfUser < 0 || ammountOfMoney < 0)
             {
                 return false;
             }
 
+            var selectedUser = BankUsers[idOfUser];
+            
             selectedUser.AmmountOfMoney = selectedUser.AmmountOfMoney + ammountOfMoney;
 
             selectedUser.StoryOfMoney.Add(selectedUser.AmmountOfMoney);
